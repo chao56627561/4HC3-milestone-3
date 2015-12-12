@@ -72,7 +72,7 @@
             this.PicPhoto.Image = global::AppUI.Properties.Resources.headPic;
             this.PicPhoto.InitialImage = null;
             this.PicPhoto.Location = new System.Drawing.Point(334, 420);
-            this.PicPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PicPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.PicPhoto.Name = "PicPhoto";
             this.PicPhoto.Size = new System.Drawing.Size(104, 91);
             this.PicPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,7 +84,7 @@
             // 
             this.pictureBox4.Image = global::AppUI.Properties.Resources.gear_3x;
             this.pictureBox4.Location = new System.Drawing.Point(359, 631);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(53, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +96,7 @@
             // 
             this.pictureBox3.Image = global::AppUI.Properties.Resources.spartan_3x;
             this.pictureBox3.Location = new System.Drawing.Point(248, 632);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(53, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,7 +108,7 @@
             // 
             this.pictureBox2.Image = global::AppUI.Properties.Resources.Speach_Bubble_Dialog_3x;
             this.pictureBox2.Location = new System.Drawing.Point(128, 633);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(53, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,7 +119,7 @@
             // 
             this.pictureBox1.Image = global::AppUI.Properties.Resources.male_3x;
             this.pictureBox1.Location = new System.Drawing.Point(27, 633);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +206,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 137);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(112, 140);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(261, 22);
             this.textBox1.TabIndex = 17;
@@ -222,10 +223,12 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(112, 208);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(261, 22);
             this.textBox3.TabIndex = 19;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -236,10 +239,12 @@
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(112, 343);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(261, 22);
             this.textBox5.TabIndex = 21;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
@@ -257,10 +262,12 @@
             // 
             // textBox8
             // 
+            this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(112, 269);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(261, 22);
             this.textBox8.TabIndex = 24;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox9
             // 
@@ -271,10 +278,12 @@
             // 
             // textBox10
             // 
+            this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(112, 420);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(261, 22);
             this.textBox10.TabIndex = 25;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // textBox11
             // 
@@ -285,10 +294,12 @@
             // 
             // textBox12
             // 
+            this.textBox12.Enabled = false;
             this.textBox12.Location = new System.Drawing.Point(112, 500);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(261, 22);
             this.textBox12.TabIndex = 27;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // AppUIMainB
             // 
@@ -320,7 +331,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AppUIMainB";
             this.Text = "AppUIMainB";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AppUIMainB_FormClosed);

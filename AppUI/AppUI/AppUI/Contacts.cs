@@ -61,17 +61,17 @@ namespace AppUI
              List <string>contacts = new List<string>(); 
              for (int i = 0; i < friends.Count; i++)
              {
-                 contacts.Add(friends.e);
+                 contacts.Add(friends[i]);
              }
              for (int i = 0; i < family.Count; i++)
              {
-
+                 contacts.Add(family[i]);
              }
              for (int i = 0; i < workers.Count; i++)
              {
-
+                 contacts.Add(workers[i]);
              }
-             return null;
+             return contacts;
 
          }
 

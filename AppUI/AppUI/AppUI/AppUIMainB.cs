@@ -14,22 +14,41 @@ namespace AppUI
     {
         private Form[] m_fMainForm;
 
+        private List<string> user_contacts;
+
+
         public AppUIMainB()
         {
             InitializeComponent();
 
-            List<string> user_contacts = new List<string>();
 
 
 
-            Contacts user =  new Contacts();
+
+            Contacts user = new Contacts();
+
+
+
+
+
+
             user.Addcontact("Joe", 1);
-            user.Addcontact("Joe", 1);
-            user.Addcontact("Joe", 1);
-            user.Addcontact("Joe", 1);
-            user.Getcontact(1);
-            textBox1.Text = "Here";
-         
+            user.Addcontact("Joe2", 1);
+            user.Addcontact("Joe3", 1);
+            user.Addcontact("Joe4", 1);
+            user.Addcontact("Joe5", 1);
+            user_contacts = user.get_contacts();
+
+
+
+            textBox1.Text = user_contacts[0];
+            textBox3.Text = user_contacts[1];
+            textBox8.Text = user_contacts[2];
+            textBox5.Text = user_contacts[3];
+            textBox10.Text = user_contacts[4];
+
+
+
 
 
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -89,6 +108,32 @@ namespace AppUI
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            textBox1.Text = user_contacts[0];
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
