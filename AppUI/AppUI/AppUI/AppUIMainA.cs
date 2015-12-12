@@ -180,6 +180,11 @@ namespace AppUI
             this.Hide();
             m_fMainForm[3].Show();
         }
+
+        private void vScrollBarTable_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
     }
 
     public class _tagRecord

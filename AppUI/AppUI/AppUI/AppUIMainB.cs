@@ -17,8 +17,26 @@ namespace AppUI
         public AppUIMainB()
         {
             InitializeComponent();
+
+            List<string> user_contacts = new List<string>();
+
+
+
+            Contacts user =  new Contacts();
+            user.Addcontact("Joe", 1);
+            user.Addcontact("Joe", 1);
+            user.Addcontact("Joe", 1);
+            user.Addcontact("Joe", 1);
+            user.Getcontact(1);
+            textBox1.Text = "Here";
+         
+
+
             this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+
+
 
         public void setMainForm(Form[] forms)
         {
@@ -47,6 +65,30 @@ namespace AppUI
         private void AppUIMainB_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AppUIMainB_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelHead_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PicPhoto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
