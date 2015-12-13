@@ -70,6 +70,12 @@
     <Compile Include="AppUIMainD.Designer.cs">
       <DependentUpon>AppUIMainD.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppUIMainE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppUIMainE.Designer.cs">
+      <DependentUpon>AppUIMainE.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppUIMainD.resx">
       <DependentUpon>AppUIMainD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppUIMainE.resx">
+      <DependentUpon>AppUIMainE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckInForm.resx">
       <DependentUpon>CheckInForm.cs</DependentUpon>

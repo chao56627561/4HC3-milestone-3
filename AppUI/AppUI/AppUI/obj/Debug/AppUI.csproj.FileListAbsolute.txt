@@ -45,3 +45,4 @@ C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.Form1.resources
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.Form2.resources
+C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainE.resources

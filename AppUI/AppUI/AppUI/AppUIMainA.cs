@@ -195,6 +195,11 @@ namespace AppUI
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class _tagRecord

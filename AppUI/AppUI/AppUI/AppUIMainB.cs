@@ -10,21 +10,40 @@ using System.Windows.Forms;
 
 namespace AppUI
 {
+
+
     public partial class AppUIMainB : Form
     {
+
+
+
+
         private Form[] m_fMainForm;
 
         private List<string> user_contacts;
 
         private List<PictureBox> pictures= new List<PictureBox>(); 
 
-        private List<Button> b1 = new List<Button>(); 
+        private List<Button> b1 = new List<Button>();
+
+
+        int x = 30;
+        int y = 50;
+
+        int distance_x = 200;
+        int distance_y2 = 120;
+        int distance_y1 = 0;
+        
+        
+        
+        
         public AppUIMainB()
         {
             InitializeComponent();
 
 
-
+            textBox1.Hide();
+            panelHead.Hide();
 
 
             Contacts user = new Contacts();
@@ -89,15 +108,27 @@ namespace AppUI
 
 
             }
-            
 
-
-           
-            
-
+            for (int i = 0; i < b1.Count; i++)
+            {
 
 
 
+                b1[i].Click += (sender, args) =>
+                {
+                    panel1.Hide();
+                    pictureBox11.Hide();
+                    panel2.Show();
+
+                    Send.Show();
+                    textBox4.Show();
+                    textBox1.Show();
+                    panelHead.Show();
+
+                };
+
+
+            }
 
 
 
@@ -106,8 +137,13 @@ namespace AppUI
 
 
 
-            
-            
+
+
+
+
+
+
+
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -148,11 +184,6 @@ namespace AppUI
 
         }
 
-        private void panelHead_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void labelTitle_Click(object sender, EventArgs e)
         {
 
@@ -167,6 +198,93 @@ namespace AppUI
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Send_Click(object sender, EventArgs e)
+        {
+            if (textBox4.Text != "")
+            {
+                int y_change = 240;
+
+                PictureBox txt = new PictureBox();
+                txt.Image = Image.FromFile("male@2x.png");
+                txt.SetBounds(x, y + distance_y1, 60, 60);
+
+                panel2.Controls.Add(txt);
+
+                TextBox t1 = new TextBox();
+                t1.Text = textBox4.Text;
+                Console.Out.WriteLine(t1.Text.Length);
+                t1.SetBounds(x + 60, y + distance_y1 + 20, 60, 60);
+                panel2.Controls.Add(t1);
+                textBox4.Clear();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                PictureBox txt2 = new PictureBox();
+
+                txt2.Image = Image.FromFile("male@2x.png");
+                txt2.SetBounds(x + distance_x, y + distance_y2, 60, 60);
+                panel2.Controls.Add(txt2);
+                distance_y1 = distance_y1 + y_change;
+                distance_y2 = distance_y2 + y_change;
+
+                TextBox t2 = new TextBox();
+                t2.Text = "Hello";
+                t2.SetBounds(x + 130, distance_y2 - 170, 60, 60);
+                panel2.Controls.Add(t2);
+            }
+        }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelHead_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panelHead.Hide();
+            textBox1.Hide();
+            panel1.Show();
+            panel2.Hide();
+
+            pictureBox11.Show();
+            textBox4.Hide();
+            Send.Hide();
+
+
+
         }
 
        
