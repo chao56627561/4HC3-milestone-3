@@ -100,6 +100,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // textBox1
             // 
@@ -136,10 +137,12 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(78, 135);
+            this.panel2.AutoScroll = true;
+            this.panel2.Location = new System.Drawing.Point(-9, 75);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 393);
+            this.panel2.Size = new System.Drawing.Size(441, 495);
             this.panel2.TabIndex = 21;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // AppUIMainC
             // 

@@ -87,10 +87,7 @@ namespace AppUI
 
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -102,7 +99,7 @@ namespace AppUI
            txt.Image = Image.FromFile("male@2x.png");
            txt.SetBounds(x,y+ distance_y1,60,60);
             
-           this.Controls.Add(txt);
+           panel2.Controls.Add(txt);
           
             
             
@@ -110,7 +107,7 @@ namespace AppUI
 
            txt2.Image = Image.FromFile("male@2x.png");
            txt2.SetBounds(x + distance_x, y+ distance_y2, 60, 60);
-           this.Controls.Add(txt2);
+           panel2.Controls.Add(txt2);
             distance_y1 = distance_y1 + y_change;
 
 
@@ -135,6 +132,16 @@ namespace AppUI
         private void AppUIMainC_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
 
 
