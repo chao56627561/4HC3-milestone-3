@@ -11,69 +11,64 @@ namespace AppUI
 
 
     {
-
+        private string name;
+        private List<string> msg;
+        
+        
+        
         public List<string> friends { get; private set; }
         public List<string> workers { get; private set; }
         public List<string> family { get; private set; }
-        public Contacts()
+       
+        
+        
+        
+        
+        public Contacts(string name)
         {
-            friends = new List<string>();
-            workers = new List<string>();
-            family = new List<string>();
 
-            TextBox a = new TextBox();
-            a.SetBounds(60, 80, 100, 120);
-            a.Show();
-            a.Text = "Here";
-
-        }
-
-
-
-
-        public void Addcontact(string name, int type)
-        {
-            if (type == 1)
-            friends.Add(name);
-            else if (type==2)
-            workers.Add(name);
-            else
-            family.Add(name);
-
+            this.name = name;
+            msg = new List<string>();
 
 
         }
 
 
-        public void Getcontact( int type)
+        public void add_message(string message)
         {
-            if (type == 1)
-                for (int i = 0; i < friends.Count; i++)
-                {
-                    Console.WriteLine("Hello");
-                }
+            
+            msg.Add(message);
+        }
+
+
+
+
+        public List<string> get_messages()
+        {
+            return msg;
+
+
+
+
+
+
+
+        } 
+
+        public string get_name()
+        {
          
-
+            
+            return this.name;
         }
 
-         public List<string> get_contacts ()
-         {
-             List <string>contacts = new List<string>(); 
-             for (int i = 0; i < friends.Count; i++)
-             {
-                 contacts.Add(friends[i]);
-             }
-             for (int i = 0; i < family.Count; i++)
-             {
-                 contacts.Add(family[i]);
-             }
-             for (int i = 0; i < workers.Count; i++)
-             {
-                 contacts.Add(workers[i]);
-             }
-             return contacts;
 
-         }
+
+
+
+
+
+
 
     }
 }

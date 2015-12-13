@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,57 +19,75 @@ namespace AppUI
 
 
 
+        int contact_picture_x = 30;
+        int contact_picture_y = 20;
+
+
+
+
+        int picture_y_change = 140;
+
+
+        int user_picture_x = 250;
+        int user_picture_y = 120;
+
+
+
+
+
+
         private Form[] m_fMainForm;
 
-        private List<string> user_contacts;
-        private List<List<string>> history= new List<List<string>>();
-
-        
-        
-
+        private List<Contacts> user_contacts= new List<Contacts>();
+        private List<Messages> msg = new List<Messages>();
         private List<PictureBox> pictures= new List<PictureBox>(); 
-
         private List<Button> b1 = new List<Button>();
+        static  Contacts current = null;
 
+       
 
-        int x = 30;
-        int y = 50;
-
-        int distance_x = 200;
-        int distance_y2 = 120;
-        int distance_y1 = 0;
-        
-        
+        static  int current_chat = 0;
         
         
         public AppUIMainB()
         {
             InitializeComponent();
 
+           
+
 
             textBox1.Hide();
             panelHead.Hide();
 
 
-            Contacts user = new Contacts();
+            Contacts user = new Contacts("joe");
+            Contacts user1 = new Contacts("joe1");
+            Contacts user2= new Contacts("joe2");
+            Contacts user3 = new Contacts("joe3");
+            Contacts user4 = new Contacts("joe4");
+
+
+           
+            user_contacts.Add(user);
+            user_contacts.Add(user1);
+            user_contacts.Add(user2);
+            user_contacts.Add(user3);
+            user_contacts.Add(user4); 
 
 
 
 
-
-
-            user.Addcontact("Joe", 1);
-            user.Addcontact("Joe2", 1);
-            user.Addcontact("Joe3", 1);
-            user.Addcontact("Joe4", 1);
-            user.Addcontact("Joe5", 1);
-            user_contacts = user.get_contacts();
 
 
             int y = 20;
             int y_change = 100;
             int textbox_y = 30;
 
+           
+            
+            
+            
+            
             for (int i = 0; i < user_contacts.Count; i++)
             {
 
@@ -84,8 +103,8 @@ namespace AppUI
                 
                 Button t1 = new Button();
                 t1.SetBounds(100,textbox_y,200,20);
-               
-                t1.Text = "name";
+
+                t1.Text = user_contacts[i].get_name();
                
                 
                 panel1.Controls.Add(t1);
@@ -93,7 +112,69 @@ namespace AppUI
 
                 b1.Add(t1);
 
+                
+                
+                
+                t1.Click += (IChannelSender, args) =>
+                {
+                    Console.Out.WriteLine(t1.Text);
+                   
+                    String chat = t1.Text;
 
+                    for (int j = 0; j < user_contacts.Count; j++)
+                    {
+                        if (t1.Text == user_contacts[j].get_name())
+                        {
+                            Console.Out.WriteLine("the match" + user_contacts[j].get_name());
+                            current = user_contacts[j];
+                            if (current.get_messages().Count != 0)
+                            {
+                                Console.Out.WriteLine("We have messages");
+                            }
+                        }
+                    }
+               //     Console.WriteLine(chat);
+                    
+
+
+
+                   
+
+
+
+
+                   
+                 
+
+
+
+
+
+
+
+
+
+
+
+                    panel1.Hide();
+                    pictureBox11.Hide();
+                    panel2.Show();
+                   
+
+                    
+                    Send.Show();
+                    textBox4.Show();
+                    textBox1.Show();
+                    panelHead.Show();
+
+
+                };
+                
+                
+                
+                
+                Console.Out.WriteLine(t1.Text);   
+               
 
 
                 TextBox t2 = new TextBox();
@@ -107,32 +188,10 @@ namespace AppUI
                 
                 textbox_y = textbox_y + y_change;
 
-
-
-
-
             }
 
-            for (int i = 0; i < b1.Count; i++)
-            {
-
-
-
-                b1[i].Click += (sender, args) =>
-                {
-                    panel1.Hide();
-                    pictureBox11.Hide();
-                    panel2.Show();
-
-                    Send.Show();
-                    textBox4.Show();
-                    textBox1.Show();
-                    panelHead.Show();
-
-                };
-
-
-            }
+            
+            
 
 
 
@@ -152,7 +211,12 @@ namespace AppUI
         }
 
 
+        public void messagiing_contacts()
+        {
+            
 
+
+        }
 
         public void setMainForm(Form[] forms)
         {
@@ -216,54 +280,67 @@ namespace AppUI
 
         private void Send_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text != "")
-            {
-                int y_change = 240;
-
-                PictureBox txt = new PictureBox();
-                txt.Image = Image.FromFile("male@2x.png");
-                txt.SetBounds(x, y + distance_y1, 60, 60);
-
-                panel2.Controls.Add(txt);
-
-                TextBox t1 = new TextBox();
-                t1.Text = textBox4.Text;
-                Console.Out.WriteLine(t1.Text.Length);
-                t1.SetBounds(x + 60, y + distance_y1 + 20, 60, 60);
-                panel2.Controls.Add(t1);
-                textBox4.Clear();
 
 
 
 
 
+           
+
+            
+
+            PictureBox txt = new PictureBox();
+            txt.Image = Image.FromFile("male@2x.png");
+            txt.SetBounds(contact_picture_x, contact_picture_y, 60, 60);
+            panel2.Controls.Add(txt);
+            
 
 
 
+            TextBox t1 = new TextBox();
+            t1.Text = textBox4.Text;
+
+            t1.SetBounds(contact_picture_x+80, contact_picture_y+20, 80, 60);
+            current.add_message(t1.Text);
+            panel2.Controls.Add(t1);
+            textBox4.Clear();
+
+
+            contact_picture_y += picture_y_change;
+            
+            
+            
+            PictureBox txt2 = new PictureBox();
+
+            txt2.Image = Image.FromFile("male@2x.png");
+            txt2.SetBounds(user_picture_x, user_picture_y, 60, 60);
+            panel2.Controls.Add(txt2);
+
+           
 
 
 
+            
 
 
+            TextBox t2 = new TextBox();
+            t2.Text = "Hello";
+            t2.SetBounds(user_picture_x - 90, user_picture_y, 80, 60);
+            panel2.Controls.Add(t2);
 
-                PictureBox txt2 = new PictureBox();
+            
+            user_picture_y += picture_y_change;
 
-                txt2.Image = Image.FromFile("male@2x.png");
-                txt2.SetBounds(x + distance_x, y + distance_y2, 60, 60);
-                panel2.Controls.Add(txt2);
-                distance_y1 = distance_y1 + y_change;
-                distance_y2 = distance_y2 + y_change;
+            current.add_message(t1.Text);
 
-                TextBox t2 = new TextBox();
-                t2.Text = "Hello";
-                t2.SetBounds(x + 130, distance_y2 - 170, 60, 60);
-                panel2.Controls.Add(t2);
-            }
+
+            
+           
         }
 
         private void textBox4_TextChanged_1(object sender, EventArgs e)
         {
-
+             
         }
 
         private void panelHead_Paint(object sender, PaintEventArgs e)
@@ -282,10 +359,25 @@ namespace AppUI
             textBox1.Hide();
             panel1.Show();
             panel2.Hide();
-
+            panel2.Controls.Clear();
             pictureBox11.Show();
             textBox4.Hide();
             Send.Hide();
+
+
+
+            contact_picture_x = 30;
+            contact_picture_y = 20;
+
+
+
+
+            picture_y_change = 140;
+
+
+            user_picture_x = 250;
+            user_picture_y = 120;
+
 
 
 
