@@ -21,6 +21,10 @@ namespace AppUI
         private Form[] m_fMainForm;
 
         private List<string> user_contacts;
+        private List<List<string>> history= new List<List<string>>();
+
+        
+        
 
         private List<PictureBox> pictures= new List<PictureBox>(); 
 
