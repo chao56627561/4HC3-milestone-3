@@ -185,6 +185,16 @@ namespace AppUI
         {
 
         }
+
+        private void panelHead_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     public class _tagRecord
