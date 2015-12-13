@@ -18,6 +18,7 @@ namespace AppUI
 
         private List<PictureBox> pictures= new List<PictureBox>(); 
 
+        private List<Button> b1 = new List<Button>(); 
         public AppUIMainB()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace AppUI
 
             int y = 20;
             int y_change = 100;
-
+            int textbox_y = 30;
 
             for (int i = 0; i < user_contacts.Count; i++)
             {
@@ -55,6 +56,35 @@ namespace AppUI
                 panel1.Controls.Add(p1);
                 pictures.Add(p1);
                 y += y_change;
+                
+                
+                
+                Button t1 = new Button();
+                t1.SetBounds(100,textbox_y,200,20);
+               
+                t1.Text = "name";
+               
+                
+                panel1.Controls.Add(t1);
+
+
+                b1.Add(t1);
+
+
+
+
+                TextBox t2 = new TextBox();
+                
+                t2.SetBounds(100, textbox_y+20, 200, 20);
+                
+                t2.Text = "last message....";
+                
+                panel1.Controls.Add(t2);
+               
+                
+                textbox_y = textbox_y + y_change;
+
+
 
 
 
@@ -63,7 +93,7 @@ namespace AppUI
 
 
            
-
+            
 
 
 
