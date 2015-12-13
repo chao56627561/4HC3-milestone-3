@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Send = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelHead = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -44,15 +45,15 @@
             this.panelHead.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Send
             // 
-            this.button1.Location = new System.Drawing.Point(160, 595);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Send.Location = new System.Drawing.Point(339, 576);
+            this.Send.Name = "Send";
+            this.Send.Size = new System.Drawing.Size(75, 23);
+            this.Send.TabIndex = 20;
+            this.Send.Text = "Send";
+            this.Send.UseVisualStyleBackColor = true;
+            this.Send.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
@@ -128,21 +129,29 @@
             this.panelHead.BackColor = System.Drawing.Color.DodgerBlue;
             this.panelHead.Controls.Add(this.panel1);
             this.panelHead.Controls.Add(this.textBox1);
-            this.panelHead.Location = new System.Drawing.Point(2, 1);
+            this.panelHead.Location = new System.Drawing.Point(-2, 1);
             this.panelHead.Margin = new System.Windows.Forms.Padding(4);
             this.panelHead.Name = "panelHead";
-            this.panelHead.Size = new System.Drawing.Size(437, 55);
+            this.panelHead.Size = new System.Drawing.Size(451, 55);
             this.panelHead.TabIndex = 2;
             this.panelHead.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHead_Paint);
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(-9, 75);
+            this.panel2.Location = new System.Drawing.Point(-2, 76);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(441, 495);
+            this.panel2.Size = new System.Drawing.Size(455, 495);
             this.panel2.TabIndex = 21;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(12, 577);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(302, 22);
+            this.textBox4.TabIndex = 22;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // AppUIMainC
             // 
@@ -150,8 +159,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(444, 701);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Send);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -170,12 +180,13 @@
             this.panelHead.ResumeLayout(false);
             this.panelHead.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Send;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -184,5 +195,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelHead;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

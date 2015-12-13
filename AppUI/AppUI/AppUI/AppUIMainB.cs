@@ -16,6 +16,7 @@ namespace AppUI
 
         private List<string> user_contacts;
 
+        private List<PictureBox> pictures= new List<PictureBox>(); 
 
         public AppUIMainB()
         {
@@ -40,17 +41,43 @@ namespace AppUI
             user_contacts = user.get_contacts();
 
 
-
-            textBox1.Text = user_contacts[0];
-            textBox3.Text = user_contacts[1];
-            textBox8.Text = user_contacts[2];
-            textBox5.Text = user_contacts[3];
-            textBox10.Text = user_contacts[4];
+            int y = 20;
+            int y_change = 100;
 
 
+            for (int i = 0; i < user_contacts.Count; i++)
+            {
+
+                PictureBox p1 = new PictureBox();
+
+                p1.SetBounds(40, y, 60, 60);
+                p1.Image = Image.FromFile("male@2x.png");
+                panel1.Controls.Add(p1);
+                pictures.Add(p1);
+                y += y_change;
 
 
 
+            }
+            
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -106,34 +133,19 @@ namespace AppUI
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = user_contacts[0];
-        }
-
+       
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+       
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+       
 
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
+
+
+      
     }
 }

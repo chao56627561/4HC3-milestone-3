@@ -92,27 +92,51 @@ namespace AppUI
         private void button1_Click(object sender, EventArgs e)
         {
 
-            
-            int y_change = 240;
-            
-           PictureBox txt = new PictureBox();
-           txt.Image = Image.FromFile("male@2x.png");
-           txt.SetBounds(x,y+ distance_y1,60,60);
-            
-           panel2.Controls.Add(txt);
-          
-            
-            
-            PictureBox txt2 = new PictureBox();
-
-           txt2.Image = Image.FromFile("male@2x.png");
-           txt2.SetBounds(x + distance_x, y+ distance_y2, 60, 60);
-           panel2.Controls.Add(txt2);
-            distance_y1 = distance_y1 + y_change;
-            distance_y2 = distance_y2 + y_change;
 
 
+            if (textBox4.Text != "")
+            {
+                int y_change = 240;
 
+                PictureBox txt = new PictureBox();
+                txt.Image = Image.FromFile("male@2x.png");
+                txt.SetBounds(x, y + distance_y1, 60, 60);
+
+                panel2.Controls.Add(txt);
+
+                TextBox t1 = new TextBox();
+                t1.Text = textBox4.Text;
+                Console.Out.WriteLine(t1.Text.Length);
+                t1.SetBounds(x + 60, y + distance_y1 + 20, 60, 60);
+                panel2.Controls.Add(t1);
+                textBox4.Clear();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                PictureBox txt2 = new PictureBox();
+
+                txt2.Image = Image.FromFile("male@2x.png");
+                txt2.SetBounds(x + distance_x, y + distance_y2, 60, 60);
+                panel2.Controls.Add(txt2);
+                distance_y1 = distance_y1 + y_change;
+                distance_y2 = distance_y2 + y_change;
+
+                TextBox t2 = new TextBox();
+                t2.Text = "Hello";
+                t2.SetBounds(x + 130, distance_y2 - 170, 60, 60);
+                panel2.Controls.Add(t2);
+            }
         }
 
 
@@ -142,6 +166,11 @@ namespace AppUI
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 
