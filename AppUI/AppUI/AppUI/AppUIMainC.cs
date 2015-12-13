@@ -14,7 +14,7 @@ namespace AppUI
     public partial class AppUIMainC : Form
     {
         int x = 30;
-        int y = 100;
+        int y = 50;
 
         int distance_x = 200;
         int distance_y2 = 120;
@@ -109,10 +109,10 @@ namespace AppUI
            txt2.SetBounds(x + distance_x, y+ distance_y2, 60, 60);
            panel2.Controls.Add(txt2);
             distance_y1 = distance_y1 + y_change;
+            distance_y2 = distance_y2 + y_change;
 
 
-           
-            
+
         }
 
 
