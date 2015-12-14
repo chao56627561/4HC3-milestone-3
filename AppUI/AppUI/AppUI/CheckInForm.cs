@@ -18,6 +18,8 @@ namespace AppUI
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.TopMost = true;
+
             this.listBoxLocation.SetSelected(0, true);
             m_parentWnd = pWnd;
         }

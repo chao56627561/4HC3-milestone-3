@@ -13,6 +13,57 @@ F:\Working\AppUI\AppUI\obj\Debug\AppUI.AppUIMainA.resources
 F:\Working\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
 F:\Working\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
 F:\Working\AppUI\AppUI\obj\Debug\AppUI.AppUIMainD.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\bin\Debug\AppUI.exe.config
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.exe
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.pdb
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\bin\Debug\AppUI.exe
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\bin\Debug\AppUI.pdb
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.AppUIMainA.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.AppUIMainD.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.CheckInForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.ContextForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.ContextGroupForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.NewCategory.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.NewFriend.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.NewGroupFrom.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.PhotoForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.Properties.Resources.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.StateForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.VideoForm.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.VoiceChat.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Debug\AppUI.csproj.GenerateResource.Cache
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\bin\Debug\AppUI.exe.config
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.exe
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.pdb
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\bin\Debug\AppUI.exe
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\bin\Debug\AppUI.pdb
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.AppUIMainA.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.AppUIMainD.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.CheckInForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.ContextForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.ContextGroupForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.NewCategory.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.NewFriend.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.NewGroupFrom.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.PhotoForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.Properties.Resources.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.StateForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.VideoForm.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.VoiceChat.resources
+D:\Users\haharsw\Documents\Tencent Files\936868281\FileRecv\AppUI\AppUI\obj\Debug\AppUI.csproj.GenerateResource.Cache
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.ContextForm.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.ContextGroupForm.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.NewCategory.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.NewFriend.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.NewGroupFrom.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.VideoForm.resources
+F:\Working\AppUI\AppUI\obj\Debug\AppUI.VoiceChat.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe.config
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe
@@ -23,26 +74,18 @@ d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainD.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.CheckInForm.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.ContextForm.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.ContextGroupForm.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.NewCategory.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.NewFriend.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.NewGroupFrom.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.PhotoForm.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.Properties.Resources.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.StateForm.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.VideoForm.resources
+d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.VoiceChat.resources
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.csproj.GenerateResource.Cache
 d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Debug\AppUI.exe
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe.config
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.exe
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.pdb
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainA.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainD.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.CheckInForm.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.PhotoForm.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.Properties.Resources.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.StateForm.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.csproj.GenerateResource.Cache
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.Form1.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.Form2.resources
-C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainE.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe.config
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.exe
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb

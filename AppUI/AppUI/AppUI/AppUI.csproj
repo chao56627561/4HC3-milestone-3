@@ -70,32 +70,42 @@
     <Compile Include="AppUIMainD.Designer.cs">
       <DependentUpon>AppUIMainD.cs</DependentUpon>
     </Compile>
-    <Compile Include="AppUIMainE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AppUIMainE.Designer.cs">
-      <DependentUpon>AppUIMainE.cs</DependentUpon>
-    </Compile>
     <Compile Include="CheckInForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CheckInForm.Designer.cs">
       <DependentUpon>CheckInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contacts.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="ContextForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ContextForm.Designer.cs">
+      <DependentUpon>ContextForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ContextGroupForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ContextGroupForm.Designer.cs">
+      <DependentUpon>ContextGroupForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Messages.cs" />
+    <Compile Include="NewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCategory.Designer.cs">
+      <DependentUpon>NewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFriend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFriend.Designer.cs">
+      <DependentUpon>NewFriend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewGroupFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGroupFrom.Designer.cs">
+      <DependentUpon>NewGroupFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhotoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +120,19 @@
     <Compile Include="StateForm.Designer.cs">
       <DependentUpon>StateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoiceChat.Designer.cs">
+      <DependentUpon>VoiceChat.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AppUIMainA.resx">
       <DependentUpon>AppUIMainA.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,17 +145,23 @@
     <EmbeddedResource Include="AppUIMainD.resx">
       <DependentUpon>AppUIMainD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppUIMainE.resx">
-      <DependentUpon>AppUIMainE.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CheckInForm.resx">
       <DependentUpon>CheckInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ContextForm.resx">
+      <DependentUpon>ContextForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ContextGroupForm.resx">
+      <DependentUpon>ContextGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCategory.resx">
+      <DependentUpon>NewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFriend.resx">
+      <DependentUpon>NewFriend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGroupFrom.resx">
+      <DependentUpon>NewGroupFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhotoForm.resx">
       <DependentUpon>PhotoForm.cs</DependentUpon>
@@ -150,7 +179,12 @@
     <EmbeddedResource Include="StateForm.resx">
       <DependentUpon>StateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
+    <EmbeddedResource Include="VideoForm.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoiceChat.resx">
+      <DependentUpon>VoiceChat.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +218,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera 4%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20151212202454.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microphone 3%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy face%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus%402x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loud sound%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\elephant%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppUI
@@ -16,6 +11,8 @@ namespace AppUI
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.TopMost = true;
+
             m_List = new List<_tagRecord>(100);
             m_rawHeight = this.panelTable.Height;
             m_insertPos = 2;
@@ -52,6 +49,11 @@ namespace AppUI
             this.panelTable.Controls.Add(type_a);
             type_a.Location = new Point(0, 2);
 
+            if(m_strUserName.Equals("Jack Gregory")==true)
+            {
+                type_a.picBox.Image = Image.FromFile("elephant@2x.png");
+            }
+
             m_insertPos = m_insertPos + type_a.Height;
             record.panel = type_a;
             m_List.Add(record);
@@ -71,6 +73,11 @@ namespace AppUI
             this.panelTable.Controls.Add(type_b);
             type_b.Location = new Point(0, 2);
 
+            if (m_strUserName.Equals("Jack Gregory") == true)
+            {
+                type_b.picBox.Image = Image.FromFile("elephant@2x.png");
+            }
+
             m_insertPos = m_insertPos + type_b.Height;
             record.panel = type_b;
             m_List.Add(record);
@@ -89,6 +96,11 @@ namespace AppUI
             PanelTypeC type_c = new PanelTypeC(m_strUserName,strContext, strLocation, width);
             this.panelTable.Controls.Add(type_c);
             type_c.Location = new Point(0, 2);
+
+            if (m_strUserName.Equals("Jack Gregory") == true)
+            {
+                type_c.picBox.Image = Image.FromFile("elephant@2x.png");
+            }
 
             m_insertPos = m_insertPos + type_c.Height;
             record.panel = type_c;
@@ -180,26 +192,6 @@ namespace AppUI
             this.Hide();
             m_fMainForm[3].Show();
         }
-
-        private void vScrollBarTable_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void panelHead_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
     public class _tagRecord
@@ -213,13 +205,15 @@ namespace AppUI
 
     public class PanelTypeA : Panel
     {
+        public PictureBox picBox;
+
         public PanelTypeA(string strUser, string strContext,int width)
         {
             this.Width = width;
             this.Height = 120;
             this.BorderStyle = BorderStyle.Fixed3D;
 
-            PictureBox picBox = new PictureBox();
+            picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
             picBox.Width = 48;
             picBox.Height = 48;
@@ -288,13 +282,15 @@ namespace AppUI
 
     public class PanelTypeB : Panel
     {
+        public PictureBox picBox;
+
         public PanelTypeB(string strUser, string strContext, string strPhotoPath, int width)
         {
             this.Width = width;
             this.Height = 230;
             this.BorderStyle = BorderStyle.Fixed3D;
 
-            PictureBox picBox = new PictureBox();
+            picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
             picBox.Width = 48;
             picBox.Height = 48;
@@ -371,13 +367,15 @@ namespace AppUI
 
     public class PanelTypeC : Panel
     {
+        public PictureBox picBox;
+
         public PanelTypeC(string strUser, string strContext, string strLocation, int width)
         {
             this.Width = width;
             this.Height = 250;
             this.BorderStyle = BorderStyle.Fixed3D;
 
-            PictureBox picBox = new PictureBox();
+            picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
             picBox.Width = 48;
             picBox.Height = 48;

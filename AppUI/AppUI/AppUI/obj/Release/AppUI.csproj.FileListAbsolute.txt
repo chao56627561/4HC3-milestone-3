@@ -13,6 +13,35 @@ F:\Working\AppUI\AppUI\obj\Release\AppUI.AppUIMainA.resources
 F:\Working\AppUI\AppUI\obj\Release\AppUI.AppUIMainB.resources
 F:\Working\AppUI\AppUI\obj\Release\AppUI.AppUIMainC.resources
 F:\Working\AppUI\AppUI\obj\Release\AppUI.AppUIMainD.resources
-d:\Users\YC\Desktop\AppUI\AppUI\AppUI\bin\Release\AppUI.exe.config
-d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Release\AppUI.exe
-d:\Users\YC\Desktop\AppUI\AppUI\AppUI\obj\Release\AppUI.pdb
+F:\Working\AppUI\AppUI\obj\Release\AppUI.NewCategory.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.NewFriend.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.ContextForm.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.VideoForm.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.ContextGroupForm.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.NewGroupFrom.resources
+F:\Working\AppUI\AppUI\obj\Release\AppUI.VoiceChat.resources
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\bin\Release\AppUI.exe.config
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Release\AppUI.exe
+d:\Users\YC\Desktop\新建文件夹 (2)\AppUI\AppUI\obj\Release\AppUI.pdb
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Release\AppUI.exe.config
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.pdb
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Release\AppUI.exe
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Release\AppUI.pdb
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.csprojResolveAssemblyReference.cache
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.AppUIMainA.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.AppUIMainB.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.AppUIMainC.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.AppUIMainD.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.CheckInForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.ContextForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.ContextGroupForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.NewCategory.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.NewFriend.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.NewGroupFrom.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.PhotoForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.Properties.Resources.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.StateForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.VideoForm.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.VoiceChat.resources
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.csproj.GenerateResource.Cache
+d:\Users\YC\Desktop\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Release\AppUI.exe

@@ -20,6 +20,8 @@ namespace AppUI
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.TopMost = true;
+
             m_parentWnd = pWnd;
             m_bPhotoSetting = false;
         }
