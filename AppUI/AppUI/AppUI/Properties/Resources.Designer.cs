@@ -83,6 +83,16 @@ namespace AppUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chat_Button {
+            get {
+                object obj = ResourceManager.GetObject("Chat_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Chat_Button_Off {
             get {
                 object obj = ResourceManager.GetObject("Chat_Button_Off", resourceCulture);
@@ -156,6 +166,16 @@ namespace AppUI.Properties {
         internal static System.Drawing.Bitmap headPic {
             get {
                 object obj = ResourceManager.GetObject("headPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Like_Button {
+            get {
+                object obj = ResourceManager.GetObject("Like_Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,16 @@ namespace AppUI.Properties {
         internal static System.Drawing.Bitmap Settings_Button_On {
             get {
                 object obj = ResourceManager.GetObject("Settings_Button_On", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Share_Button {
+            get {
+                object obj = ResourceManager.GetObject("Share_Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -42,6 +42,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelHead.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelTableContainer.SuspendLayout();
@@ -53,20 +54,21 @@
             // 
             // panelHead
             // 
-            this.panelHead.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(85)))), ((int)(((byte)(129)))));
             this.panelHead.Controls.Add(this.labelTitle);
             this.panelHead.Location = new System.Drawing.Point(1, 0);
             this.panelHead.Name = "panelHead";
-            this.panelHead.Size = new System.Drawing.Size(328, 74);
+            this.panelHead.Size = new System.Drawing.Size(328, 45);
             this.panelHead.TabIndex = 0;
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTitle.Location = new System.Drawing.Point(87, 22);
+            this.labelTitle.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Location = new System.Drawing.Point(103, 11);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(148, 29);
+            this.labelTitle.Size = new System.Drawing.Size(114, 25);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "News Feed";
             // 
@@ -101,6 +103,7 @@
             // 
             // panelTable
             // 
+            this.panelTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.panelTable.Location = new System.Drawing.Point(3, 4);
             this.panelTable.Name = "panelTable";
             this.panelTable.Size = new System.Drawing.Size(297, 391);
@@ -108,6 +111,8 @@
             // 
             // btnCheckIn
             // 
+            this.btnCheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckIn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckIn.Location = new System.Drawing.Point(232, 1);
             this.btnCheckIn.Name = "btnCheckIn";
             this.btnCheckIn.Size = new System.Drawing.Size(75, 25);
@@ -118,6 +123,8 @@
             // 
             // btnPhoto
             // 
+            this.btnPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhoto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhoto.Location = new System.Drawing.Point(125, 2);
             this.btnPhoto.Name = "btnPhoto";
             this.btnPhoto.Size = new System.Drawing.Size(75, 25);
@@ -128,11 +135,13 @@
             // 
             // btnState
             // 
+            this.btnState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnState.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnState.Location = new System.Drawing.Point(18, 3);
             this.btnState.Name = "btnState";
             this.btnState.Size = new System.Drawing.Size(75, 25);
             this.btnState.TabIndex = 0;
-            this.btnState.Text = "State";
+            this.btnState.Text = "Status";
             this.btnState.UseVisualStyleBackColor = true;
             this.btnState.Click += new System.EventHandler(this.btnState_Click);
             // 
@@ -180,11 +189,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(328, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "MONDAY, DECEMBER 14 2015";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // AppUIMainA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(329, 566);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -221,6 +244,7 @@
         private System.Windows.Forms.Panel panelTableContainer;
         private System.Windows.Forms.VScrollBar vScrollBarTable;
         private System.Windows.Forms.Panel panelTable;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -172,6 +172,9 @@
   <data name="elephant@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\elephant@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chat_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chat_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Chat_Button_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chat_Button_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +186,9 @@
   </data>
   <data name="Contacts_Button_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Contacts_Button_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Like_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Like_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NewsFeed_Button_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewsFeed_Button_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,5 +210,8 @@
   </data>
   <data name="Settings_Button_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings_Button_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Share_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Share_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

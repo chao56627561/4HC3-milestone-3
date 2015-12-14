@@ -216,7 +216,7 @@ namespace AppUI
         {
             this.Width = width;
             this.Height = 120;
-            this.BorderStyle = BorderStyle.Fixed3D;
+            this.BorderStyle = BorderStyle.FixedSingle;
 
             picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
@@ -227,7 +227,7 @@ namespace AppUI
             picBox.Location = new Point(2, 2);
 
             Label lblName = new Label();
-            lblName.ForeColor = Color.Cyan;
+            lblName.ForeColor = Color.FromArgb(14,85,129);
             lblName.Text = strUser;
             lblName.Width = width - 50 - 6;
             lblName.Height = 20;
@@ -255,33 +255,39 @@ namespace AppUI
             this.Controls.Add(txtBox);
             txtBox.Location = new Point(2, 51);
 
-            Random rd = new Random();
+            Random rd = new Random(); var v = rd.Next(10); 
             Label lblLike = new Label();
-            lblLike.Text = "Like " + (rd.Next(10) + 1);
-            lblLike.ForeColor = Color.Blue;
-            lblLike.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblLike.Width = 60;
+            lblLike.Text = v == 0 ? "" : "+" + v.ToString(); 
+            lblLike.ForeColor = Color.FromArgb(14, 85, 129);
+            lblLike.Font = new Font("Tahoma", 8, FontStyle.Regular);
+            lblLike.Width = 25;
             lblLike.Height = 16;
             this.Controls.Add(lblLike);
-            lblLike.Location = new Point(10, 99);
+            lblLike.Location = new Point(0, 100);
 
-            Label lblComment = new Label();
-            lblComment.Text = "Comment";
-            lblComment.ForeColor = Color.Blue;
-            lblComment.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblComment.Width = 70;
-            lblComment.Height = 16;
+            PictureBox picLike = new PictureBox();
+            picLike.BackgroundImage = Properties.Resources.Like_Button;
+            picLike.BackgroundImageLayout = ImageLayout.Zoom;
+            picLike.Width = 100;
+            picLike.Height = 30;
+            picLike.Location = new Point(0, 90);
+            this.Controls.Add(picLike);
+
+            PictureBox lblComment = new PictureBox();
+            lblComment.BackgroundImage = Properties.Resources.Chat_Button;
+            lblComment.BackgroundImageLayout = ImageLayout.Zoom;
+            lblComment.Width = 100;
+            lblComment.Height = 30;
+            lblComment.Location = new Point(100, 90);
             this.Controls.Add(lblComment);
-            lblComment.Location = new Point(110, 99);
 
-            Label lblShare = new Label();
-            lblShare.Text = "Share";
-            lblShare.ForeColor = Color.Blue;
-            lblShare.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblShare.Width = 60;
-            lblShare.Height = 16;
+            PictureBox lblShare = new PictureBox();
+            lblShare.BackgroundImage = Properties.Resources.Share_Button;
+            lblShare.BackgroundImageLayout = ImageLayout.Zoom;
+            lblShare.Width = 100;
+            lblShare.Height = 30;
+            lblShare.Location = new Point(200, 90);
             this.Controls.Add(lblShare);
-            lblShare.Location = new Point(230, 99);
         }
     }
 
@@ -293,7 +299,7 @@ namespace AppUI
         {
             this.Width = width;
             this.Height = 230;
-            this.BorderStyle = BorderStyle.Fixed3D;
+            this.BorderStyle = BorderStyle.FixedSingle;
 
             picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
@@ -304,7 +310,7 @@ namespace AppUI
             picBox.Location = new Point(2, 2);
 
             Label lblName = new Label();
-            lblName.ForeColor = Color.Cyan;
+            lblName.ForeColor = Color.FromArgb(14, 85, 129);
             lblName.Text = strUser;
             lblName.Width = width - 50 - 6;
             lblName.Height = 20;
@@ -340,33 +346,39 @@ namespace AppUI
             this.Controls.Add(picPhoto);
             picPhoto.Location = new Point(0, 98);
 
-            Random rd = new Random();
+            Random rd = new Random(); var v = rd.Next(10);
             Label lblLike = new Label();
-            lblLike.Text = "Like " +(rd.Next(10) + 1);
-            lblLike.ForeColor = Color.Blue;
-            lblLike.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblLike.Width = 60;
+            lblLike.Text = v == 0 ? "" : "+" + v.ToString();
+            lblLike.ForeColor = Color.FromArgb(14, 85, 129);
+            lblLike.Font = new Font("Tahoma", 8, FontStyle.Regular);
+            lblLike.Width = 25;
             lblLike.Height = 16;
             this.Controls.Add(lblLike);
-            lblLike.Location = new Point(10, 209);
+            lblLike.Location = new Point(0, 210); 
 
-            Label lblComment = new Label();
-            lblComment.Text = "Comment";
-            lblComment.ForeColor = Color.Blue;
-            lblComment.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblComment.Width = 70;
-            lblComment.Height = 16;
+           PictureBox picLike = new PictureBox();
+            picLike.BackgroundImage = Properties.Resources.Like_Button;
+            picLike.BackgroundImageLayout = ImageLayout.Zoom;
+            picLike.Width = 100;
+            picLike.Height = 30;
+            picLike.Location = new Point(-5, 200);
+            this.Controls.Add(picLike);
+
+            PictureBox lblComment = new PictureBox();
+            lblComment.BackgroundImage = Properties.Resources.Chat_Button;
+            lblComment.BackgroundImageLayout = ImageLayout.Zoom;
+            lblComment.Width = 100;
+            lblComment.Height = 30;
+            lblComment.Location = new Point(100, 200);
             this.Controls.Add(lblComment);
-            lblComment.Location = new Point(110, 209);
 
-            Label lblShare = new Label();
-            lblShare.Text = "Share";
-            lblShare.ForeColor = Color.Blue;
-            lblShare.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblShare.Width = 60;
-            lblShare.Height = 16;
-            this.Controls.Add(lblShare);
-            lblShare.Location = new Point(230, 209);
+            PictureBox lblShare = new PictureBox();
+            lblShare.BackgroundImage = Properties.Resources.Share_Button;
+            lblShare.BackgroundImageLayout = ImageLayout.Zoom;
+            lblShare.Width = 100;
+            lblShare.Height = 30;
+            lblShare.Location = new Point(200, 200);
+            this.Controls.Add(lblShare); 
         }
     }
 
@@ -377,8 +389,8 @@ namespace AppUI
         public PanelTypeC(string strUser, string strContext, string strLocation, int width)
         {
             this.Width = width;
-            this.Height = 250;
-            this.BorderStyle = BorderStyle.Fixed3D;
+            this.Height = 272;
+            this.BorderStyle = BorderStyle.FixedSingle;
 
             picBox = new PictureBox();
             picBox.Image = Image.FromFile("male@2x.png");
@@ -389,7 +401,7 @@ namespace AppUI
             picBox.Location = new Point(2, 2);
 
             Label lblName = new Label();
-            lblName.ForeColor = Color.Cyan;
+            lblName.ForeColor = Color.FromArgb(14, 85, 129);
             lblName.Text = strUser;
             lblName.Width = width - 50 - 6;
             lblName.Height = 20;
@@ -433,34 +445,40 @@ namespace AppUI
             lblLocation.Font = new Font("Arial", 9, FontStyle.Underline);
             this.Controls.Add(lblLocation);
             lblLocation.Location = new Point(2, 210);
-
-            Random rd = new Random();
+             
+            Random rd = new Random(); var v = rd.Next(10);
             Label lblLike = new Label();
-            lblLike.Text = "Like " + (rd.Next(10) + 1);
-            lblLike.ForeColor = Color.Blue;
-            lblLike.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblLike.Width = 60;
+            lblLike.Text = v == 0 ? "" : "+" + v.ToString();
+            lblLike.ForeColor = Color.FromArgb(14, 85, 129);
+            lblLike.Font = new Font("Tahoma", 8, FontStyle.Regular);
+            lblLike.Width = 25;
             lblLike.Height = 16;
             this.Controls.Add(lblLike);
-            lblLike.Location = new Point(10, 229);
+            lblLike.Location = new Point(0, 210);
 
-            Label lblComment = new Label();
-            lblComment.Text = "Comment";
-            lblComment.ForeColor = Color.Blue;
-            lblComment.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblComment.Width = 70;
-            lblComment.Height = 16;
+            PictureBox picLike = new PictureBox();
+            picLike.BackgroundImage = Properties.Resources.Like_Button;
+            picLike.BackgroundImageLayout = ImageLayout.Zoom;
+            picLike.Width = 100;
+            picLike.Height = 30;
+            picLike.Location = new Point(-5, 220);
+            this.Controls.Add(picLike);
+
+            PictureBox lblComment = new PictureBox();
+            lblComment.BackgroundImage = Properties.Resources.Chat_Button;
+            lblComment.BackgroundImageLayout = ImageLayout.Zoom;
+            lblComment.Width = 100;
+            lblComment.Height = 30;
+            lblComment.Location = new Point(100, 220);
             this.Controls.Add(lblComment);
-            lblComment.Location = new Point(110, 229);
 
-            Label lblShare = new Label();
-            lblShare.Text = "Share";
-            lblShare.ForeColor = Color.Blue;
-            lblShare.Font = new Font("Arial", 10, FontStyle.Regular);
-            lblShare.Width = 60;
-            lblShare.Height = 16;
-            this.Controls.Add(lblShare);
-            lblShare.Location = new Point(230, 229);
+            PictureBox lblShare = new PictureBox();
+            lblShare.BackgroundImage = Properties.Resources.Share_Button;
+            lblShare.BackgroundImageLayout = ImageLayout.Zoom;
+            lblShare.Width = 100;
+            lblShare.Height = 30;
+            lblShare.Location = new Point(200, 220);
+            this.Controls.Add(lblShare); 
         }
     }
 }
