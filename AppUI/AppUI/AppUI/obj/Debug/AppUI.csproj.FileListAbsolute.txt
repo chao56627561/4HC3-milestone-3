@@ -114,3 +114,4 @@ C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.exe
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.TransparentTextBox.resources
+D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
