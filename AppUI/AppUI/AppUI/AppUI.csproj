@@ -121,6 +121,12 @@
     <Compile Include="StateForm.Designer.cs">
       <DependentUpon>StateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentTextBox.Designer.cs">
+      <DependentUpon>TransparentTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
     <Compile Include="VideoForm.cs">
       <SubType>Form</SubType>
@@ -179,6 +185,9 @@
     </Compile>
     <EmbeddedResource Include="StateForm.resx">
       <DependentUpon>StateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentTextBox.resx">
+      <DependentUpon>TransparentTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VideoForm.resx">
       <DependentUpon>VideoForm.cs</DependentUpon>

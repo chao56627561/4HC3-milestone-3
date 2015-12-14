@@ -30,11 +30,6 @@
         {
             this.panelHead = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,50 +37,109 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelTableContainer = new System.Windows.Forms.Panel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnSearchCancel = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.panelHead.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panelTableContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelTableContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHead
             // 
-            this.panelHead.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(85)))), ((int)(((byte)(129)))));
             this.panelHead.Controls.Add(this.labelTitle);
-            this.panelHead.Location = new System.Drawing.Point(1, 2);
+            this.panelHead.Location = new System.Drawing.Point(0, 0);
             this.panelHead.Name = "panelHead";
-            this.panelHead.Size = new System.Drawing.Size(328, 68);
+            this.panelHead.Size = new System.Drawing.Size(333, 56);
             this.panelHead.TabIndex = 1;
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTitle.Location = new System.Drawing.Point(109, 19);
+            this.labelTitle.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(125, 17);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(103, 29);
+            this.labelTitle.Size = new System.Drawing.Size(76, 25);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Recent";
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
-            // pictureBox5
+            // panelMain
             // 
-            this.pictureBox5.Image = global::AppUI.Properties.Resources.searchbar;
-            this.pictureBox5.Location = new System.Drawing.Point(1, 70);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(328, 34);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
+            this.panelMain.Location = new System.Drawing.Point(0, 4);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(300, 390);
+            this.panelMain.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(262, 548);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Settings";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(167, 549);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Contract List";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(98, 549);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Chats";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 549);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "News Feed";
+            // 
+            // panelTableContainer
+            // 
+            this.panelTableContainer.Controls.Add(this.panelMain);
+            this.panelTableContainer.Location = new System.Drawing.Point(4, 112);
+            this.panelTableContainer.Name = "panelTableContainer";
+            this.panelTableContainer.Size = new System.Drawing.Size(304, 397);
+            this.panelTableContainer.TabIndex = 23;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Enabled = false;
+            this.vScrollBar1.Location = new System.Drawing.Point(311, 116);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(18, 392);
+            this.vScrollBar1.TabIndex = 24;
+            this.vScrollBar1.ValueChanged += new System.EventHandler(this.vScrollBar1_ValueChanged);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::AppUI.Properties.Resources.gear_3x;
-            this.pictureBox4.Location = new System.Drawing.Point(269, 473);
+            this.pictureBox4.Location = new System.Drawing.Point(269, 512);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
@@ -94,9 +148,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AppUI.Properties.Resources.spartan_3x;
-            this.pictureBox3.Location = new System.Drawing.Point(186, 474);
+            this.pictureBox3.Location = new System.Drawing.Point(186, 514);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
@@ -105,9 +159,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AppUI.Properties.Resources.Speach_Bubble_Dialog_3x;
-            this.pictureBox2.Location = new System.Drawing.Point(96, 475);
+            this.pictureBox2.Location = new System.Drawing.Point(96, 515);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -115,103 +169,93 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AppUI.Properties.Resources.male_3x;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 475);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 515);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // panelMain
+            // pictureBox5
             // 
-            this.panelMain.Location = new System.Drawing.Point(0, 4);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(300, 360);
-            this.panelMain.TabIndex = 11;
+            this.pictureBox5.BackgroundImage = global::AppUI.Properties.Resources.Search_Bar_Middle;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(40, 56);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(258, 40);
+            this.pictureBox5.TabIndex = 27;
+            this.pictureBox5.TabStop = false;
             // 
-            // label4
+            // btnSearch
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 506);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Settings";
+            this.btnSearch.BackgroundImage = global::AppUI.Properties.Resources.Search_Bar_Left;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(0, 56);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(40, 40);
+            this.btnSearch.TabIndex = 27;
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnSearchCancel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(167, 507);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 12);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Contract List";
+            this.btnSearchCancel.BackgroundImage = global::AppUI.Properties.Resources.Search_Bar_Right;
+            this.btnSearchCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchCancel.FlatAppearance.BorderSize = 0;
+            this.btnSearchCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchCancel.Location = new System.Drawing.Point(289, 56);
+            this.btnSearchCancel.Name = "btnSearchCancel";
+            this.btnSearchCancel.Size = new System.Drawing.Size(40, 40);
+            this.btnSearchCancel.TabIndex = 28;
+            this.btnSearchCancel.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // txtSearch
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 507);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Chats";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 507);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "News Feed";
-            // 
-            // panelTableContainer
-            // 
-            this.panelTableContainer.Controls.Add(this.panelMain);
-            this.panelTableContainer.Location = new System.Drawing.Point(4, 103);
-            this.panelTableContainer.Name = "panelTableContainer";
-            this.panelTableContainer.Size = new System.Drawing.Size(304, 366);
-            this.panelTableContainer.TabIndex = 23;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Enabled = false;
-            this.vScrollBar1.Location = new System.Drawing.Point(311, 107);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(18, 362);
-            this.vScrollBar1.TabIndex = 24;
-            this.vScrollBar1.ValueChanged += new System.EventHandler(this.vScrollBar1_ValueChanged);
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.Gray;
+            this.txtSearch.Location = new System.Drawing.Point(47, 69);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(236, 16);
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.Text = "Search...";
+            this.txtSearch.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.txtSearch.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // AppUIMainB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 522);
+            this.ClientSize = new System.Drawing.Size(329, 566);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSearchCancel);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.panelTableContainer);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelHead);
+            this.Controls.Add(this.pictureBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "AppUIMainB";
             this.Text = "AppUIMainB";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AppUIMainB_FormClosed);
             this.panelHead.ResumeLayout(false);
             this.panelHead.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panelTableContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelTableContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +269,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -233,5 +276,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTableContainer;
         private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnSearchCancel;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

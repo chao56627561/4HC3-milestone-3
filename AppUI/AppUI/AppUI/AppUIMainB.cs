@@ -44,6 +44,10 @@ namespace AppUI
             m_insertPos = 0;
             m_rawHeight = panelTableContainer.Height;
 
+            //SetStyle(this.txtSearch, ControlStyles.UserPaint, true);
+            //SetStyle(this.txtSearch, ControlStyles.SupportsTransparentBackColor, true);
+            //this.txtSearch.BackColor = Color.FromArgb(0, 255, 255, 255);
+
             initializeData();
             initializePanel();
         }
@@ -74,6 +78,15 @@ namespace AppUI
         private void AppUIMainB_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        public static bool SetStyle(Control c, ControlStyles Style, bool value)
+        {
+            bool retval = false;
+            Type typeTB = typeof(Control);
+            System.Reflection.MethodInfo misSetStyle = typeTB.GetMethod("SetStyle", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            if (misSetStyle != null && c != null) { misSetStyle.Invoke(c, new object[] { Style, value }); retval = true; }
+            return retval;
         }
 
         private void initializeData()
@@ -382,6 +395,23 @@ namespace AppUI
                 this.Hide();
                 m_fMainForm[2].Show();
             }
+        }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "Search...") { txtSearch.Text = "";  }
+            txtSearch.ForeColor = Color.Black;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "") { txtSearch.Text = "Search..."; }
+            txtSearch.ForeColor = Color.Gray;
         }
     }
 

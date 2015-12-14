@@ -94,7 +94,6 @@ D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\Ap
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.pdb
-D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainA.resources
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainB.resources
 D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.AppUIMainC.resources
@@ -114,3 +113,4 @@ D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\Ap
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\bin\Debug\AppUI.exe.config
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.exe
 C:\Users\emaad_000\Documents\Visual Studio 2013\Projects\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.pdb
+D:\stuff\classes\4hc3\proj3\code\4HC3-milestone-3\AppUI\AppUI\AppUI\obj\Debug\AppUI.TransparentTextBox.resources
