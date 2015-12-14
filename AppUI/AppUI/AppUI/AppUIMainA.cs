@@ -192,6 +192,11 @@ namespace AppUI
             this.Hide();
             m_fMainForm[3].Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class _tagRecord

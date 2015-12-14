@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppUIMainA));
             this.panelHead = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
@@ -41,10 +42,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelHead.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelTableContainer.SuspendLayout();
@@ -60,14 +57,14 @@
             this.panelHead.Controls.Add(this.labelTitle);
             this.panelHead.Location = new System.Drawing.Point(1, 0);
             this.panelHead.Name = "panelHead";
-            this.panelHead.Size = new System.Drawing.Size(328, 68);
+            this.panelHead.Size = new System.Drawing.Size(328, 74);
             this.panelHead.TabIndex = 0;
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTitle.Location = new System.Drawing.Point(87, 20);
+            this.labelTitle.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelTitle.Location = new System.Drawing.Point(87, 22);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(148, 29);
             this.labelTitle.TabIndex = 1;
@@ -80,40 +77,40 @@
             this.panelMain.Controls.Add(this.btnCheckIn);
             this.panelMain.Controls.Add(this.btnPhoto);
             this.panelMain.Controls.Add(this.btnState);
-            this.panelMain.Location = new System.Drawing.Point(1, 71);
+            this.panelMain.Location = new System.Drawing.Point(1, 77);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(328, 400);
+            this.panelMain.Size = new System.Drawing.Size(328, 433);
             this.panelMain.TabIndex = 1;
             // 
             // vScrollBarTable
             // 
             this.vScrollBarTable.Enabled = false;
-            this.vScrollBarTable.Location = new System.Drawing.Point(308, 33);
+            this.vScrollBarTable.Location = new System.Drawing.Point(308, 36);
             this.vScrollBarTable.Name = "vScrollBarTable";
-            this.vScrollBarTable.Size = new System.Drawing.Size(20, 364);
+            this.vScrollBarTable.Size = new System.Drawing.Size(20, 394);
             this.vScrollBarTable.TabIndex = 0;
             this.vScrollBarTable.ValueChanged += new System.EventHandler(this.vScrollBarTable_ValueChanged);
             // 
             // panelTableContainer
             // 
             this.panelTableContainer.Controls.Add(this.panelTable);
-            this.panelTableContainer.Location = new System.Drawing.Point(4, 33);
+            this.panelTableContainer.Location = new System.Drawing.Point(4, 36);
             this.panelTableContainer.Name = "panelTableContainer";
-            this.panelTableContainer.Size = new System.Drawing.Size(303, 364);
+            this.panelTableContainer.Size = new System.Drawing.Size(303, 394);
             this.panelTableContainer.TabIndex = 3;
             // 
             // panelTable
             // 
             this.panelTable.Location = new System.Drawing.Point(3, 4);
             this.panelTable.Name = "panelTable";
-            this.panelTable.Size = new System.Drawing.Size(297, 361);
+            this.panelTable.Size = new System.Drawing.Size(297, 391);
             this.panelTable.TabIndex = 0;
             // 
             // btnCheckIn
             // 
             this.btnCheckIn.Location = new System.Drawing.Point(232, 1);
             this.btnCheckIn.Name = "btnCheckIn";
-            this.btnCheckIn.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckIn.Size = new System.Drawing.Size(75, 25);
             this.btnCheckIn.TabIndex = 2;
             this.btnCheckIn.Text = "Check In";
             this.btnCheckIn.UseVisualStyleBackColor = true;
@@ -123,7 +120,7 @@
             // 
             this.btnPhoto.Location = new System.Drawing.Point(125, 2);
             this.btnPhoto.Name = "btnPhoto";
-            this.btnPhoto.Size = new System.Drawing.Size(75, 23);
+            this.btnPhoto.Size = new System.Drawing.Size(75, 25);
             this.btnPhoto.TabIndex = 1;
             this.btnPhoto.Text = "Photo";
             this.btnPhoto.UseVisualStyleBackColor = true;
@@ -133,7 +130,7 @@
             // 
             this.btnState.Location = new System.Drawing.Point(18, 3);
             this.btnState.Name = "btnState";
-            this.btnState.Size = new System.Drawing.Size(75, 23);
+            this.btnState.Size = new System.Drawing.Size(75, 25);
             this.btnState.TabIndex = 0;
             this.btnState.Text = "State";
             this.btnState.UseVisualStyleBackColor = true;
@@ -141,10 +138,10 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::AppUI.Properties.Resources.gear_3x;
-            this.pictureBox4.Location = new System.Drawing.Point(272, 475);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(245, 513);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.Size = new System.Drawing.Size(82, 52);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -152,10 +149,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::AppUI.Properties.Resources.spartan_3x;
-            this.pictureBox3.Location = new System.Drawing.Point(189, 476);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(164, 513);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(82, 52);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -163,10 +160,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::AppUI.Properties.Resources.Speach_Bubble_Dialog_3x;
-            this.pictureBox2.Location = new System.Drawing.Point(99, 477);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(83, 513);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(82, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -174,59 +171,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AppUI.Properties.Resources.male_3x;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 477);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(2, 513);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(82, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 508);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Settings";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(167, 509);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 12);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Contract List";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 509);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Chats";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 509);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "News Feed";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // AppUIMainA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 522);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(329, 566);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -245,7 +203,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -264,10 +221,6 @@
         private System.Windows.Forms.Panel panelTableContainer;
         private System.Windows.Forms.VScrollBar vScrollBarTable;
         private System.Windows.Forms.Panel panelTable;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
     }
 }
 
