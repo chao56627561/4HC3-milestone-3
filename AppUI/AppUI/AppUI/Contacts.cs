@@ -36,7 +36,7 @@ namespace AppUI
                 Console.Out.WriteLine(friends[i]);
 
             }
-
+            
 
         }
 
