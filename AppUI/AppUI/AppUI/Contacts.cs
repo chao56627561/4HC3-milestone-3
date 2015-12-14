@@ -13,13 +13,46 @@ namespace AppUI
     {
         private string name;
         private List<string> msg;
-        
-        
-        
-        public List<string> friends { get; private set; }
-        public List<string> workers { get; private set; }
-        public List<string> family { get; private set; }
-       
+
+
+
+        public List<string> friends;
+        public List<string> workers;
+        public List<string> family;
+
+
+        public List<string> get_friends()
+        {
+            return friends;
+
+        }
+
+
+        public void iterate_friends()
+        {
+
+            for (int i = 0; i < friends.Count; i++)
+            {
+                Console.Out.WriteLine(friends[i]);
+
+            }
+
+
+        }
+
+        public List<string> get_workers()
+        {
+            return workers;
+
+        }
+
+
+        public List<string> get_family()
+        {
+            return family;
+
+        }
+
         
         
         
